@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    div{
+        margin-left: 650px;
+        margin-top: 300px;
+    }
+</style>
+<body>
+<div>
+学生签到考勤管理系统
+<span th:text="${msg}"></span>
+<form action="/login" method="post">
+    用户名：<input type="text" name="account"><br>
+    密&nbsp&nbsp&nbsp码：<input type="password" name="pwd"><br>
+    <input type="submit" value="登录">
+</form>
+</div>
+</body>
+</html>

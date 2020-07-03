@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<span th:text="${msg}"></span>
+<form action="/signin" method="post">
+    <input type="hidden" th:value="${studentId}" name="studentId">
+    签到码：<input type="text" name="code"><br>
+    <input type="submit" value="签到">
+</form>
+
+</body>
+</html>

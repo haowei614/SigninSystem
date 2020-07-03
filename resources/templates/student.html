@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+学生签到页<br>
+欢迎<span th:text="${student.name}"></span><br>
+<span th:text="${msg}"></span><br>
+    <a th:href="@{/signin/}+${student.studentId}">签到</a>
+</body>
+</html>
